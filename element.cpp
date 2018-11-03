@@ -16,3 +16,8 @@ void Element::print() {
     if(next != nullptr) cout << " -> ";
     cout << endl;
 }
+
+void connect(Element* one, Element* two) {
+    one->next = two;
+    two->prev = one;
+}

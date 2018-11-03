@@ -7,8 +7,11 @@
 
 #include "element.h"
 
+const int MAX_SIZE = 10;
+
 class Queue {
     Element* head;
+    Element* tail;
     int length;
 public:
     Queue();
@@ -17,5 +20,12 @@ public:
     ~Queue();
 
     void print();
+
+    void enqueue(Element* e);
+    void enqueue(int t);
+    Element* dequeue();
+    Element* peek();
+    bool isFull();
+    bool isEmpty();
 };
 #endif //QUEUE_QUEUE_H

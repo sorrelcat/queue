@@ -16,6 +16,8 @@ struct Element {
     ~Element();
 
     void print();
+
+    friend void connect(Element* one, Element* two);
 };
 
 #endif //QUEUE_ELEMENT_H

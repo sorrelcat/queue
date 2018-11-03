@@ -9,10 +9,13 @@
 
 class Queue {
     Element* head;
-    int lenght;
+    int length;
 public:
     Queue();
+    Queue(Element& e);
     Queue(const Queue& q);
     ~Queue();
+
+    void print();
 };
 #endif //QUEUE_QUEUE_H

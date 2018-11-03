@@ -5,7 +5,14 @@
 #ifndef QUEUE_QUEUE_H
 #define QUEUE_QUEUE_H
 
-class Queue {
+#include "element.h"
 
+class Queue {
+    Element* head;
+    int lenght;
+public:
+    Queue();
+    Queue(const Queue& q);
+    ~Queue();
 };
 #endif //QUEUE_QUEUE_H

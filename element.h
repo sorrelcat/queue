@@ -14,6 +14,8 @@ struct Element {
     Element(int t);
     Element(const Element& e);
     ~Element();
+
+    void print();
 };
 
 #endif //QUEUE_ELEMENT_H
